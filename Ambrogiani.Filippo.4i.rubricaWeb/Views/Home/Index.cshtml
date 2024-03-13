@@ -1,0 +1,19 @@
+﻿@model List<string> //qui metto model con m piccola
+
+@{
+    ViewData["Title"] = "Gelati";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Benvenuti nel sito!!</h1>
+    
+    <table>
+        @{ //pezzo di c# robusto
+            foreach( var elemento in @Model ){ //qui metto model con M grande
+                <tr><td>@elemento</td></tr> 
+            }
+        }
+    </table>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
